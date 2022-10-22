@@ -1,0 +1,252 @@
+.container__background-triangle{
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.triangle{
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: absolute;
+}
+
+.triangle1{
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to left, #0ea1e6, #1e67c7);
+    right: 100px;
+    top: 100px;
+    animation: t1 8s ease infinite;
+}
+
+.triangle2{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to left, #ee8105, #c7371e);
+    top: 350px;
+    animation: t2 9s ease infinite;
+}
+
+.triangle3{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left, #1b8fc5, #df0f8f);
+    left: 200px;
+    animation: t3 7s ease infinite;
+}
+
+@keyframes t1 {
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+@keyframes t2 {
+    0%{
+        transform: rotate(65deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(65deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(65deg) translateY(0px);
+    }
+}
+
+@keyframes t3 {
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+    50%{
+        transform: rotate(45deg) translateY(20px);
+    }
+    100%{
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+
+<div class="coverCard">  
+                         <img src="./Imagenes/Web.jpg" alt="Web">
+
+
+
+                    </div>
+
+
+
+
+                    footer{
+
+                        background-color: black;
+                        text-align: center;
+                        font-size: 8px;
+                        padding: 4px;
+                        padding-top: 8px;
+                        height: 40px;
+                    }
+                    
+
+.container__cards{
+    width:100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card{
+    width: 350px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card:hover .cover__card img{
+    transform: scale(1.1);
+}
+
+.cover__card{
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cover__card img{
+    width: 110%;
+    transition: all 300ms;
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.card p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.card hr{
+    margin-top: 30px;
+    border: none;
+    height: 0.2px;
+    background: #41414138;
+}
+
+.footer__card{
+    margin-top: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.footer__card h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1200px) {
+    .container__cards{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+
+
+
+
+<br>
+<br>
+<center>
+    <h2 class="font-weight-bold" style="text-align: center; color: #333333">
+        Trabajamos con más de 10 paises
+    </h2>
+
+    <h4>
+        - Argentina
+        - Bolivia
+        - Brasil
+        - Chile
+        - Colombia
+        - Costa Rica
+        - Cuba
+        - Ecuador
+    </h4>
+
+    <h4>
+        - Ecuador
+        - España
+        - México
+        - Paraguay
+        - Perú
+        - Portugal
+        - Uruguay
+        - Venezuela
+    </h4>
+</center>
+</br>
+<main class="contenedor sombra">
+        <h2>Sobre Nosotros</h2>
+
+        <div class="servicios">
+            <section class="servicio">
+                <h3>Historia</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                        <line x1="3" y1="6" x2="3" y2="19" />
+                        <line x1="12" y1="6" x2="12" y2="19" />
+                        <line x1="21" y1="6" x2="21" y2="19" />
+                      </svg>
+                </div>
+
+            <section class="section border-0 pb-0 pb-lg-5 m-0">
+                <div class="container my-lg-4">
+                    <div class="row mb-4 pb-2">
+                        <div class="col">
+                            <p> Somos un empresa con más de 10 años de trayectoria en Diseño Web personalizados y adaptados a las necesidades de cada uno de nuestros clientes. Creamos la imagen visual y brindamos soluciones gráficas, ayudándo a comunicar y promover sus productos y servicios. Ofrecemos una amplia gama de precios y servicios de Diseño web para emprendedores, Pyme, Profesionales y Empresas. El diseño web de hoy en día engloba muchas otras características y atributos, las tendencias en diseño de paginas web están cada vez mas orientadas al diseño web responsive o pagina web responsive, se trata de un diseño adaptado a celulares, smartphones y tablets. Nuestra empresa se encuentra ubicada en el centro de la ciudad de Buenos Aires, Argentina.</p>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
